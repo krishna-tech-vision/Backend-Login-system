@@ -20,7 +20,7 @@ app.use("/users/login", loginRoute);
 
 app.get("/", (req, res) => {
     
-    res.json({ success: true, deployed: true}); // Home route
+    res.json({ success: true, deployed: true});
 });
 
 const port = process.env.PORT || 3000;
