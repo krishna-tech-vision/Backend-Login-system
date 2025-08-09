@@ -20,8 +20,7 @@ app.use("/users/login", loginRoute);
 
 app.get("/", (req, res) => {
     
-    res.sendFile(path.join(__dirname, "./Dashboad/dashboard.html"));
-    // res.send("Hello")
+    res.json({ success: true, deployed: true});
 });
 
 const port = process.env.PORT || 3000;
